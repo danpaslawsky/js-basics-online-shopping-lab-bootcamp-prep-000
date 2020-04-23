@@ -72,8 +72,8 @@ function placeOrder(cardNumber) {
   
   if (cardNumber > 0){
     return (`${yourTotal} $${total()}${willBeCharged}${cardNumber}.`);
-    
   }
+  
   else{
   return "Sorry, we don't have a credit card on file for you.";
   }
