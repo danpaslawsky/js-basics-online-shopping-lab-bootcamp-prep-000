@@ -71,7 +71,7 @@ function placeOrder(cardNumber) {
   var willBeCharged = ", which will be charged to the card ";
   
   if (cardNumber > 0){
-    return (`${yourTotal} $${total()}${willBeCharged}${cardNumber}.`);
+    console.log(`${yourTotal} $${total()}${willBeCharged}${cardNumber}.`);
     cart.length = 0;
   }
   else{
