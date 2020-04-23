@@ -67,5 +67,11 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+  var yourTotal = "Your total cost is";
+  var willBeCharged = ", which will be charged to the card ";
   
+  if (cardNumber > 0){
+    console.log(`${yourTotal} ${total()}${willBeCharged} ${cardNumber}.`);
+  }
+  return "Sorry, we don't have a credit card on file for you.";
 }
